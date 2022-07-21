@@ -220,8 +220,11 @@ window.addEventListener('DOMContentLoaded', () => {
     // Ex. 90
 
     axios.get('http://localhost:3000/menu')
-        .then(data => console.log(data));
-    // .then(data => createCard(data));
+        .then(data => {
+            data.data.forEach(({ img, altimg, title, descr, price }) => {
+                new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
+            });
+        });
 
     function createCard(data) {
         const transfer = 60;
