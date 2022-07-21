@@ -352,8 +352,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // fetch('db.json')
     // fetch('http://localhost:3000/requests')
-    fetch('http://localhost:3000/menu')
-        .then(data => data.json())
-        .then(res => console.log(res));
+    // fetch('http://localhost:3000/menu')
+    //     .then(data => data.json())
+    //     .then(res => console.log(res));
 
 });
